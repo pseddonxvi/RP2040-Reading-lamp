@@ -8,7 +8,7 @@ import board
 import neopixel
 from ledPixelsPico import *
 
-# Chnage GPIO for LEDs here
+# Chnage number of LEDs here
 nPix = 18
 
 # Defines state of LEDs 
@@ -20,8 +20,8 @@ def turnoff():
     for i in range (nPix):
         pixels[i] = (0, 0, 0)
 
+# Change GPIO for LEDs
 pixels = neopixel.NeoPixel(board.GP13, nPix)
-
 
 # Change GPIO for button here
 timerBtn = digitalio.DigitalInOut(board.GP28)
