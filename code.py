@@ -18,7 +18,7 @@ def turnoff():
         pixels[i] = (0, 0, 0)
 
 # Chnage GPIO for LEDs here
-pixels = neopixel.NeoPixel(board.GP13, 8)
+pixels = neopixel.NeoPixel(board.GP13, 18)
 
 # Change GPIO for button here
 timerBtn = digitalio.DigitalInOut(board.GP28)
